@@ -30,6 +30,8 @@ client.on('message', message =>{
         client.commands.get('ping').execute(message, args);
     } else if (command == 'yt'){
         client.commands.get('yt').execute(message, args);
+    } else if (command == 'made'){
+        client.commands.get('made').execute(message, args);
     }
 });
 
