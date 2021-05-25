@@ -17,7 +17,7 @@ for(const file of commandFiles){
  
 client.once('ready', () => {
     console.log('Epic Bot is online! Lets go!');
-    client.user.setActivity("I'm Epic");
+    client.user.setActivity("maintenance");
 });
  
 client.on('message', message =>{
