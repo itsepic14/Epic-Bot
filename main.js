@@ -11,14 +11,14 @@ const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith(
 for(const file of commandFiles){
     const command = require(`./commands/${file}`);
  
-    client.commands.set(command.name, command);
+    client.commands.set(command.name, command); 
 }
  
  
 client.once('ready', () => {
     console.log('Epic Bot is online!');
     client.user.setActivity("Work in progress!");
-});
+}); 
  
 client.on('message', message =>{
     if(!message.content.startsWith(prefix) || message.author.bot) return;
@@ -32,6 +32,10 @@ client.on('message', message =>{
         client.commands.get('yt').execute(message, args);
     } else if (command == 'made'){
         client.commands.get('made').execute(message, args);
+    } else if (command == 'kick'){
+        client.commands.get('kick').execute(message, args);
+    } else if (command == 'ban'){
+        client.commands.get('ban').execute(message, args);
     }
 });
 
