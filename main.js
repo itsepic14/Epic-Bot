@@ -30,8 +30,8 @@ client.on('message', message =>{
         client.commands.get('ping').execute(message, args);
     } else if (command == 'yt'){
         client.commands.get('yt').execute(message, args);
-    } else if (command == 'made'){
-        client.commands.get('made').execute(message, args);
+    } else if (command == 'owns'){
+        client.commands.get('owns').execute(message, args);
     } else if (command == 'kick'){
         client.commands.get('kick').execute(message, args);
     } else if (command == 'ban'){

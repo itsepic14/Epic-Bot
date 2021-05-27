@@ -1,7 +1,7 @@
 module.exports = {
-    name: 'made',
-    description: "made",
+    name: 'owns',
+    description: "owns",
     execute(message, args){
-        message.channel.send('This bot is made by epic.#2017');
+        message.channel.send('epic.#2017 owns this discord bot.');
     }
 }
